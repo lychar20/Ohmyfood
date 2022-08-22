@@ -1,45 +1,65 @@
-header {
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300&display=swap");
+.header__logo, h1, h2, h3, h4 {
+  font-family: "Shrikhand", arial, sans-serif;
+}
+
+body {
+  font-family: "Roboto", arial, sans-serif;
+}
+
+.header {
   /*background-color: yellow;*/
   text-align: center;
 }
-header .logo {
+.header__logo {
   height: 30px;
   /*background-color: red;*/
   justify-content: center;
   align-items: center;
   display: flex;
 }
-header .logo img {
+.header__logo img {
   width: 100px;
   height: auto;
 }
-header .location {
+.header__location {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   height: 30px;
-  background-color: lightgrey;
+  background-color: #eaeaea;
+  padding-left: 80px;
 }
-header .reservation {
-  background-color: whitesmoke;
+.header__recherche {
+  border: none;
+  background-color: #eaeaea;
+  color: black;
+  font-weight: bold;
+}
+.header .reservation {
+  background-color: #f6f6f6;
   height: 220px;
 }
-header .reservation__menu {
+.header .reservation__menu {
   /*background-color: blue;*/
   padding-top: 20px;
   width: 45%;
   margin: auto;
+  font-size: 21px;
+  font-weight: bold;
 }
-header .reservation p {
+.header .reservation__decouverte {
   /*background-color: brown;*/
   width: 55%;
   margin: auto;
-  padding-top: 20px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
-header .reservation .bouton {
-  background-color: #9356DC;
+.header .reservation .bouton {
+  background: linear-gradient(#FF79DA, #9356DC);
   width: 200px;
   padding: 10px;
   border: 1px solid white;
