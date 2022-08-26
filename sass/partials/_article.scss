@@ -1,18 +1,38 @@
 .restaurant
 {
-    background-color: red;
-    margin-top: 80px;
-    height: 500px;
+    background-color: #f6f6f6;
+    margin-top: 40px;
+    height: auto;
     width: 100%;
 
     &__titre{
         padding-left: 10px;
+        padding-top: 40px;
+        font-weight: bold;
+        font-size: 18px;
     }
 
     &__global{
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 20px;
+
+        @media screen and (min-width: 768px)
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 992px)
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+            
+        }
     
     }
 
@@ -27,21 +47,83 @@
     border-radius: 20px;
     align-items: flex-start;
     display: flex;
+    position: relative;
+    margin-bottom: 20px;
+
+
+
+    @media screen and (min-width: 768px)
+    {
+        width: 40%;
+        
+    }
+
+    @media screen and (min-width: 992px)
+    {
+        width: 20%;
+    }
+
 
 } 
 
 .restaurant__image{
     height: 70%;
     width: 100%;
-    background-color: aqua;
-    border-radius: 20px 20px 0 0; /* donne la rondeur en haut de l'image */
+    /*background-color: aqua; */
+    
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /*donne la rondeur en haut de l'image */
+    }
 }
 
 .restaurant__description{
     display: flex;
     align-items: center;
-    
-    i{
-        color: black;
+    /*background-color: yellow; */
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 100%;
+    height: 30%;
+
+    .jaime{
+        cursor: pointer;
     }
+    
+}
+
+
+.identite{
+    margin-top: 5px;
+    line-height: 0.3;
+    text-decoration: none;
+
+    &__nom{
+        font-weight: bold;
+    }
+
+    &__ville{
+        font-size: 15px;
+    }
+
+}
+
+.bouton_nouveau{
+    background-color: #99E2D0;
+    width: 100px;
+    height: 35px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: green;
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    
 }

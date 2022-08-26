@@ -150,18 +150,37 @@ body {
 }
 
 .restaurant {
-  background-color: red;
-  margin-top: 80px;
-  height: 500px;
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  height: auto;
   width: 100%;
 }
 .restaurant__titre {
   padding-left: 10px;
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .restaurant__global {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__global {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__global {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
 }
 
 .restaurant__bloc {
@@ -173,19 +192,84 @@ body {
   border-radius: 20px;
   align-items: flex-start;
   display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__bloc {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__bloc {
+    width: 20%;
+  }
 }
 
 .restaurant__image {
   height: 70%;
   width: 100%;
-  background-color: aqua;
-  border-radius: 20px 20px 0 0; /* donne la rondeur en haut de l'image */
+  /*background-color: aqua; */
+}
+.restaurant__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0; /*donne la rondeur en haut de l'image */
 }
 
 .restaurant__description {
   display: flex;
   align-items: center;
+  /*background-color: yellow; */
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 15px;
+  width: 100%;
+  height: 30%;
 }
-.restaurant__description i {
-  color: black;
+.restaurant__description .jaime {
+  cursor: pointer;
+}
+
+.identite {
+  margin-top: 5px;
+  line-height: 0.3;
+  text-decoration: none;
+}
+.identite__nom {
+  font-weight: bold;
+}
+.identite__ville {
+  font-size: 15px;
+}
+
+.bouton_nouveau {
+  background-color: #99E2D0;
+  width: 100px;
+  height: 35px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: green;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.pied_de_page {
+  margin-top: 60px;
+  background-color: #353535;
+}
+.pied_de_page img {
+  height: 20px;
+  margin-top: 30px;
+}
+.pied_de_page .contact {
+  margin-left: 20px;
+  padding-bottom: 30px;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
