@@ -5,78 +5,18 @@
     
 
     &__logo{
-        height: 30px;
+        height: 40px;
         /*background-color: red;*/
         justify-content: center;
         align-items: center;
         display: flex;
 
         img{
-            width: 100px;
+            width: 160px;
             height: auto;
             
         }
     }
 
-    &__location{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        height: 30px;
-        background-color: #eaeaea;
-        padding-left: 80px;
-    }
-
-    &__recherche{
-        border: none;
-        background-color: #eaeaea;
-        color: black;
-        font-weight: bold;
-    }
-
-    .reservation{
-        background-color: #f6f6f6;
-        height: 100%;
-        padding-bottom: 50px;
-        
-    &__menu {
-        /*background-color: blue;*/
-        padding-top: 20px;
-        
-        width: 80%;
-        margin: auto;
-        font-size: 21px;
-        font-weight: bold;
-        
-    }
-
-    &__decouverte{
-        /*background-color: brown;*/
-        width: 90%;
-        margin: auto;
-        padding-top: 10px;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    .bouton{
-        
-        background: linear-gradient(#FF79DA, #9356DC);
-        width: 200px;
-        padding: 10px;
-        border: 1px solid transparent;
-        border-radius: 30px;
-        box-shadow: 0px 3px 3px #999;
-        margin: auto;
-
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        color: white;
-    }
-        
-       }
-        
 }
 

@@ -2,15 +2,43 @@
     margin-top: 60px;
     background-color: #353535;
 
-    img{
+    /*img{
         height: 20px;
         margin-top: 30px;
         
+    }
+    */
+
+    ul{
+        padding-inline-start: 0;
+        line-height: 2.5;
+    }
+
+    li{
+        list-style-type: none;
+
+        i{
+            margin-right: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 
     .contact{
         margin-left: 20px;
         padding-bottom: 30px;
+        padding-top: 30px;
         color: white;
+    }
+
+    .logo-svg{
+        width: 110px;
+        height: auto;
+        path{
+            fill: white;
+        }
     }
 }
