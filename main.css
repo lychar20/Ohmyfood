@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300&display=swap");
-.header__logo, h4, h5 {
+.header__logo, h4, h5, .nom_du_restaurant {
   font-family: "Shrikhand", arial, sans-serif;
 }
 
@@ -22,6 +22,15 @@ body {
 .header__logo img {
   width: 160px;
   height: auto;
+}
+
+.francaise a {
+  text-decoration: none;
+  color: black;
+}
+.francaise i {
+  margin-right: 50px;
+  font-size: bold;
 }
 
 .location-reserver {
@@ -181,6 +190,23 @@ body {
   margin-right: 10px;
 }
 
+.photo_restaurant {
+  width: 100%;
+  height: 200px;
+  /*background-color: yellow; */
+}
+@media screen and (min-width: 678px) {
+  .photo_restaurant {
+    position: initial;
+  }
+}
+.photo_restaurant img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 40px;
@@ -298,8 +324,8 @@ body {
 
 .jaime {
   position: relative;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 .jaime:active .coeur-plein {
@@ -313,18 +339,86 @@ body {
 
 .coeur-vide {
   position: absolute;
-  font-size: 15px;
+  font-size: 20px;
   z-index: 1;
 }
 
 .coeur-plein {
   position: absolute;
-  font-size: 15px;
+  font-size: 20px;
   color: #9356DC;
   /*background-color: blue */
   z-index: 5;
   opacity: 0;
   transition: all 400ms;
+}
+
+.restaurant_francaise {
+  background-color: red;
+  height: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid transparent;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
+}
+@media screen and (min-width: 678px) {
+  .restaurant_francaise {
+    margin-top: 0;
+    border-radius: 0px;
+  }
+}
+.restaurant_francaise .nom_du_restaurant {
+  font-size: 27px;
+}
+.restaurant_francaise .nom_coeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entree {
+  width: 100%;
+}
+.entree .titre_plat {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.entree .titre_plat::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  /* margin: 0 auto;  This will center the border. */
+  width: 12%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #99E2D0; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.choix_plats {
+  background-color: yellow;
+}
+.choix_plats .nom_des_choix {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  background-color: green;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.choix_plats .nom_des_choix li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.choix_plats .nom_des_choix li .nom_et_description {
+  line-height: 0.3;
+}
+.choix_plats .nom_des_choix li .prix {
+  margin-top: 25px;
 }
 
 .pied_de_page {

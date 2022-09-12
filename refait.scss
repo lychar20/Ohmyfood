@@ -1,0 +1,117 @@
+.menu{
+    width: 100%;
+    background-color: grey;
+    
+    @media screen and (min-width: 768px)
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+}
+
+.card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 95%;
+    height: 65px;
+    background-color: red;
+    border-radius: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  
+    
+
+   
+
+    &:hover{
+        .col3{
+            min-width: 50px;
+            width: 100px;
+
+            .icone{
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .col1
+    {
+        flex-grow: 1; 
+        background-color:green;
+
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        
+        
+
+        h3{
+            overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        background-color: yellow;
+        margin: 0;
+         
+        }
+
+        p{
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        background-color: aqua;
+        margin: 0;
+         
+        
+        }
+    }
+
+
+    .col2{
+        min-width: 60px;
+        width: 70px;
+        background-color: blue;
+        margin-top: 25px;
+        
+        
+    }
+    
+    .col3{
+        min-width: 0px;
+        width: 0px;
+        background-color: pink;
+        height: 100%;
+        
+        transition: all 400ms;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+
+        .cercle{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .icone{
+                transition-duration: 0.8s;
+                transition-property: transform;
+            }
+        }
+
+}
+
+}
