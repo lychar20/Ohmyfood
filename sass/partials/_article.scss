@@ -180,8 +180,9 @@
 
 
 .restaurant_francaise{
-    background-color: red;
-    height: 600px;
+    /*background-color: peru;*/
+    background-color: #f6f6f6;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid transparent;
@@ -211,7 +212,7 @@
 }
 
 
-.entree{
+.type{
     width: 100%;
 
     .titre_plat{
@@ -233,7 +234,7 @@
 
 
 .choix_plats{
-    background-color: yellow;
+    /*background-color: yellow; */
     
     .nom_des_choix{
         padding-inline-start: 0;
@@ -266,4 +267,187 @@
 }
 
 
+.menu{
+    width: 100%;
+    /*background-color: grey; */
+    
+    @media screen and (min-width: 768px)
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+}
 
+.card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 95%;
+    height: 65px;
+    /*background-color: red; */
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  
+    
+
+   
+
+    &:hover{
+        .col3{
+            min-width: 50px;
+            width: 100px;
+
+            .icone{
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .col1
+    {
+        flex-grow: 1; 
+        /*background-color:green;*/
+
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        
+        
+
+        h3{
+            overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /*background-color: yellow; */
+        margin: 0;
+         
+        }
+
+        p{
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /*background-color: aqua;*/
+        margin: 0;
+         
+        
+        }
+    }
+
+
+    .col2{
+        min-width: 60px;
+        width: 70px;
+        /*background-color: blue; */
+        margin-top: 25px;
+        
+        
+    }
+    
+    .col3{
+        min-width: 0px;
+        width: 0px;
+        background-color: $couleurtertiaire;
+        height: 100%;
+        
+        transition: all 400ms;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+
+        .cercle{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .icone{
+                transition-duration: 0.8s;
+                transition-property: transform;
+            }
+        }
+
+}
+
+}
+
+
+.autre
+{
+	animation-name: mon_anim;
+	animation-duration: 1000ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+
+	animation-iteration-count: 1;
+}
+
+
+@keyframes mon_anim{
+	0%{
+		transform: translateY(10px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+.autre_3
+{
+	animation-name: mon_anim;
+	animation-duration: 1500ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+
+	animation-iteration-count: 1;
+}
+
+
+.autre_4
+{
+	animation-name: mon_anim;
+	animation-duration: 2000ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+
+	animation-iteration-count: 1;
+}
+
+
+.bouton{
+    
+    background: $couleurbouton; 
+    width: 200px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0px 3px 3px #999;
+    margin: auto;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-top: 55px;
+    margin-bottom: 80px;
+    border: none;
+}
