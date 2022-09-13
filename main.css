@@ -8,6 +8,10 @@ body {
   font-family: "Roboto", arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   /*background-color: yellow;*/
   text-align: center;
@@ -387,6 +391,7 @@ body {
 .type .titre_plat {
   font-weight: normal;
   text-transform: uppercase;
+  color: #7b7b7b;
 }
 .type .titre_plat::after {
   content: ""; /* This is necessary for the pseudo element to work. */
@@ -484,6 +489,7 @@ body {
   width: 70px;
   /*background-color: blue; */
   margin-top: 25px;
+  font-weight: bold;
 }
 .card .col3 {
   min-width: 0px;
@@ -570,6 +576,19 @@ body {
           animation-iteration-count: 1;
 }
 
+.autre_5 {
+  -webkit-animation-name: mon_anim;
+          animation-name: mon_anim;
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
 .bouton {
   background: linear-gradient(#FF79DA, #9356DC);
   width: 200px;
@@ -584,7 +603,7 @@ body {
   display: flex;
   color: white;
   margin-top: 55px;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
   border: none;
 }
 
@@ -629,4 +648,6 @@ body {
 
 .pied_article {
   margin-top: -50px;
+  z-index: 1;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

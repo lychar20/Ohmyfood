@@ -218,6 +218,7 @@
     .titre_plat{
         font-weight: normal;
         text-transform: uppercase;
+        color: #7b7b7b;
 
         &::after{
             content: ""; /* This is necessary for the pseudo element to work. */ 
@@ -350,6 +351,7 @@
         width: 70px;
         /*background-color: blue; */
         margin-top: 25px;
+        font-weight: bold;
         
         
     }
@@ -431,6 +433,16 @@
 	animation-iteration-count: 1;
 }
 
+.autre_5
+{
+	animation-name: mon_anim;
+	animation-duration: 2500ms;
+	animation-delay: 0ms;
+	animation-timing-function: ease-in-out;
+
+	animation-iteration-count: 1;
+}
+
 
 .bouton{
     
@@ -448,6 +460,6 @@
     display: flex;
     color: white;
     margin-top: 55px;
-    margin-bottom: 80px;
+    margin-bottom: 140px;
     border: none;
 }
