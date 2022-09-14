@@ -11,6 +11,7 @@
     height: 40px;
     background-color: #eaeaea;
     padding-left: 80px;
+    box-shadow: inset 3px 3px 3px #bfbfbf;
 }
 
 .recherche{
@@ -62,6 +63,11 @@
     display: flex;
     color: white;
     border: none;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
     
    }

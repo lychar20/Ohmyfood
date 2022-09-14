@@ -49,6 +49,7 @@ body {
   height: 40px;
   background-color: #eaeaea;
   padding-left: 80px;
+  box-shadow: inset 3px 3px 3px #bfbfbf;
 }
 
 .recherche {
@@ -94,6 +95,10 @@ body {
   display: flex;
   color: white;
   border: none;
+}
+.reservation .bouton a {
+  text-decoration: none;
+  color: white;
 }
 
 .fonctionnement {
@@ -219,7 +224,7 @@ body {
   width: 100%;
   padding-top: 40px;
 }
-.restaurant__titre {
+.restaurant #restaurant__titre {
   padding-left: 10px;
   /*padding-top: 40px; */
   font-weight: bold;
