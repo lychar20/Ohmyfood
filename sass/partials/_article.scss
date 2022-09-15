@@ -6,7 +6,7 @@
     width: 100%;
     padding-top: 40px;
 
-    #restaurant__titre{
+    &__titre{
         padding-left: 10px;
         /*padding-top: 40px; */
         font-weight: bold;
@@ -334,7 +334,7 @@
         width: 0px;
         background-color: $couleurtertiaire;
         height: 100%;
-        
+        color: $couleurtertiaire;
         transition: all 400ms;
         display: flex;
         justify-content: center;
@@ -385,7 +385,7 @@
 }
 
 
-.autre_3
+.autre_1
 {
 	animation-name: mon_anim;
 	animation-duration: 1500ms;
@@ -396,7 +396,7 @@
 }
 
 
-.autre_4
+.autre_2
 {
 	animation-name: mon_anim;
 	animation-duration: 2000ms;
@@ -406,7 +406,7 @@
 	animation-iteration-count: 1;
 }
 
-.autre_5
+.autre_3
 {
 	animation-name: mon_anim;
 	animation-duration: 2500ms;
@@ -426,7 +426,7 @@
     border-radius: 30px;
     box-shadow: 0px 3px 3px #999;
     margin: auto;
-    cursor: pointer;
+    cursor: pointer; 
 
     justify-content: center;
     align-items: center;
@@ -435,4 +435,12 @@
     margin-top: 55px;
     margin-bottom: 140px;
     border: none;
+
+    &:hover{
+        background: linear-gradient(356deg,
+        lighten($coleurgradient1, 10%) 0%,
+        lighten($couleurgradient2, 15%) 70%,
+        );
+        box-shadow: 0px 6px 6px #999;
+    }
 }

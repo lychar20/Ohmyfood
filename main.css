@@ -49,7 +49,7 @@ body {
   height: 40px;
   background-color: #eaeaea;
   padding-left: 80px;
-  box-shadow: inset 3px 3px 3px #bfbfbf;
+  box-shadow: inset 0px 3px 3px #bfbfbf;
 }
 
 .recherche {
@@ -96,9 +96,9 @@ body {
   color: white;
   border: none;
 }
-.reservation .bouton a {
-  text-decoration: none;
-  color: white;
+.reservation .bouton:hover {
+  background: linear-gradient(356deg, #fface8 0%, #bc95e9 70%);
+  box-shadow: 0px 6px 6px #999;
 }
 
 .fonctionnement {
@@ -170,6 +170,9 @@ body {
     margin-left: 0;
   }
 }
+.global_choix .choisissez .dernier i {
+  color: #9356DC;
+}
 .global_choix .choisissez .petit_cercle {
   border: 1px solid transparent;
   border-radius: 100px;
@@ -224,7 +227,7 @@ body {
   width: 100%;
   padding-top: 40px;
 }
-.restaurant #restaurant__titre {
+.restaurant__titre {
   padding-left: 10px;
   /*padding-top: 40px; */
   font-weight: bold;
@@ -477,6 +480,7 @@ body {
   width: 0px;
   background-color: #99E2D0;
   height: 100%;
+  color: #99E2D0;
   transition: all 400ms;
   display: flex;
   justify-content: center;
@@ -531,7 +535,7 @@ body {
     opacity: 1;
   }
 }
-.autre_3 {
+.autre_1 {
   -webkit-animation-name: mon_anim;
           animation-name: mon_anim;
   -webkit-animation-duration: 1500ms;
@@ -544,7 +548,7 @@ body {
           animation-iteration-count: 1;
 }
 
-.autre_4 {
+.autre_2 {
   -webkit-animation-name: mon_anim;
           animation-name: mon_anim;
   -webkit-animation-duration: 2000ms;
@@ -557,7 +561,7 @@ body {
           animation-iteration-count: 1;
 }
 
-.autre_5 {
+.autre_3 {
   -webkit-animation-name: mon_anim;
           animation-name: mon_anim;
   -webkit-animation-duration: 2500ms;
@@ -586,6 +590,10 @@ body {
   margin-top: 55px;
   margin-bottom: 140px;
   border: none;
+}
+.bouton:hover {
+  background: linear-gradient(356deg, #fface8 0%, #bc95e9 70%);
+  box-shadow: 0px 6px 6px #999;
 }
 
 .pied_de_page {

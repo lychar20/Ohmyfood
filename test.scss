@@ -199,3 +199,49 @@
      background-color: aqua;
      width: 600px;
 }
+
+
+
+.loader-position {
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*z-index: 1000;*/
+    /*background-color: black; */
+  }
+   
+  .loader {
+    width: 120px;
+    height: 120px;
+    border: 6px solid green;
+    border-radius: 50%;
+    border-top-color: blue;
+    border-bottom-color: pink;
+    border-left-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%, -50%) rotate(0deg); 
+    animation: spin 3s linear;
+    animation-fill-mode: forwards;
+  }
+ 
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
