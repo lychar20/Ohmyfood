@@ -87,6 +87,7 @@
     font-weight: bold; 
     /*background-color: blue;*/
     margin-left: 10px;
+    
 
     @media screen and (min-width: 768px)
     {
@@ -106,6 +107,8 @@
 
     li{
         list-style-type: none;
+        z-index: 1;
+        
     }
 
     }
@@ -115,6 +118,8 @@
         /*display: row; */
         padding-inline-start: 0;
         /*background-color: yellow; */
+        
+        
         
         @media screen and (min-width: 768px)
         {

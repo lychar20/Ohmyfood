@@ -444,3 +444,44 @@
         box-shadow: 0px 6px 6px #999;
     }
 }
+
+.loader-position {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+   
+
+  .loader {
+    width: 220px;
+    height: 220px;
+    border: 6px solid white;
+    border-radius: 50%;
+    border-top-color: $coleurgradient1;
+    border-bottom-color: $couleurgradient2;
+    border-left-color: $couleurtertiaire;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%, -50%) rotate(0deg); 
+    animation: spin 3s linear;
+    animation-fill-mode: forwards;
+  }
+ 
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }

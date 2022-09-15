@@ -139,8 +139,8 @@
 
 .loader-position {
   /*position: fixed;*/
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0; */
   width: 30%;
   height: 30%;
   display: flex;
@@ -151,8 +151,8 @@
 }
 
 .loader {
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   border: 6px solid green;
   border-radius: 50%;
   border-top-color: blue;

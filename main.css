@@ -122,6 +122,7 @@ body {
 }
 .fonctionnement li {
   list-style-type: none;
+  z-index: 1;
 }
 
 .global_choix {
@@ -596,6 +597,56 @@ body {
   box-shadow: 0px 6px 6px #999;
 }
 
+.loader-position {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.loader {
+  width: 220px;
+  height: 220px;
+  border: 6px solid white;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  border-left-color: #99E2D0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-animation: spin 3s linear;
+          animation: spin 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .pied_de_page {
   margin-top: 60px;
   background-color: #353535;
