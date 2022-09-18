@@ -107,6 +107,9 @@ body {
   /*background-color: blue;*/
   margin-left: 10px;
 }
+.fonctionnement li {
+  z-index: 1;
+}
 @media screen and (min-width: 768px) {
   .fonctionnement {
     /*display: flex;
@@ -122,7 +125,6 @@ body {
 }
 .fonctionnement li {
   list-style-type: none;
-  z-index: 1;
 }
 
 .global_choix {
@@ -151,7 +153,11 @@ body {
   /*pas de justify content center*/
   gap: 10px;
   margin-top: 30px;
+  cursor: pointer;
   width: 100%;
+}
+.global_choix .choisissez:hover .text {
+  color: #9356DC;
 }
 @media screen and (min-width: 768px) {
   .global_choix .choisissez {
@@ -374,7 +380,7 @@ body {
   background-color: #f6f6f6;
   height: auto;
   padding-left: 20px;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   border: 1px solid transparent;
   border-radius: 40px 40px 0px 0px;
   position: relative;
@@ -394,6 +400,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.restaurant_francaise .nom_coeur .jaime {
+  margin-right: 20px;
 }
 
 .type {
@@ -617,7 +626,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 2;
+  z-index: 200;
   display: flex;
   justify-content: center;
   align-items: center;

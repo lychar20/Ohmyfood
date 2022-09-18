@@ -137,6 +137,7 @@
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
+    
 
     &:active{
         .coeur-plein
@@ -188,7 +189,7 @@
     background-color: #f6f6f6;
     height: auto;
     padding-left: 20px;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
     border: 1px solid transparent;
     border-radius: 40px 40px 0px 0px;
     position: relative;
@@ -211,6 +212,9 @@
         justify-content: space-between;
         align-items: center;
         
+        .jaime{
+            margin-right: 20px;
+        }
     }
 
 }
@@ -452,6 +456,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    
   }
    
 
@@ -466,7 +471,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 2;
+    z-index: 200;
     display: flex;
     justify-content: center;
     align-items: center;
